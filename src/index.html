@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accessible PDFs</title>
+</head>
+<body>
+	<main>
+		<h1>Menu</h1>
+		<div class="container">
+		<section aria-labelledby="breakfast">
+			<h2 id="breakfast">Breakfast</h2>
+			<dl>
+				<dt>Pancakes</dt>
+				<dd>$4.99</dd>
+				<dt>Waffles</dt>
+				<dd>$4.99</dd>
+				<dt>Just straight-up cereal??</dt>
+				<dd>$1.99</dd>
+				<dt>Oatmeal</dt>
+				<dd>$4.99</dd>
+			</dl>
+		</section>
+		<section aria-labelledby="hours">
+			<h2 id="hours">Hours of Operation</h2>
+			<dl>
+				<dt>Sunmonday</dt>
+				<dd>Closed</dd>
+				<dt>Montuesday</dt>
+				<dd>Closed</dd>
+				<dt>Tuewednesday</dt>
+				<dd>Closed</dd>
+				<dt>Wednesthursday</dt>
+				<dd>Closed</dd>
+				<dt>Thufriday</dt>
+				<dd>4pm - 5pm</dd>
+				<dt>WEEKEND</dt>
+				<dd>Closed</dd>
+				<dt>ALSO WEEKEND</dt>
+				<dd>Closed</dd>
+			</dl>
+		</section>
+	</div>
+	</main>
+	<footer>
+		<a href="menu.pdf" class="hide-on-print">Download PDF</a>
+	</footer>
+	<style media="print">
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.hide-on-print {
+			display: none;
+		}
+	</style>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "accessible-pdfs-with-eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+	"dev": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "eleventy-plugin-prince-pdf": "https://github.com/larryhudson/eleventy-plugin-prince-pdf"
+  }
+}
